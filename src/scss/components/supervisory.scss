@@ -1,0 +1,43 @@
+.supervisory {
+    padding: 100px 0;
+    font-size: 14px;
+    color: map-get($welcome, 'section-font-color');
+    text-align: center;
+
+    @include media('<tablet') {
+        display: none;
+    }
+
+    h1 {
+        position: relative;
+        margin-bottom: 76px;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 300;
+
+        &:after {
+            content: '';
+            display: block;
+            border-bottom: 1px solid #769eca;
+            width: 250px;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    p {
+        line-height: 20px;
+    }
+
+    .flex-wrap {
+        align-items: flex-start;
+
+        .col {
+            width: 31%;
+            text-align: left;
+        }
+    }
+
+}

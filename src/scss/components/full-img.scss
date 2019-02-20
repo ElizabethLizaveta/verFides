@@ -1,0 +1,9 @@
+.full-img {
+    height: 300px;
+    width: 100%;
+    background: 100% 100%/cover;
+
+    @include media('<desktop') {
+        height: 200px;
+    }
+}

@@ -1,0 +1,105 @@
+.contact {
+    width: 100%;
+    padding: 80px 0;
+    font-size: 14px;
+    color: map-get($contact, 'section-font-color');
+    text-align: center;
+
+    @include media('<desktop') {
+        padding: 30px 0;
+    }
+
+    .title-wrap {
+        max-width: 780px;
+        margin: 0 auto;
+        margin-bottom: 62px;
+
+        h1 {
+            position: relative;
+            margin-bottom: 78px;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 300;
+
+            &:after {
+                content: '';
+                display: block;
+                border-bottom: 1px solid #769eca;
+                width: 250px;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .flex-wrap {
+
+        @include media('<tablet') {
+            flex-direction: column;
+        }
+
+        .col {
+
+            h2 {
+                position: relative;
+                margin: 32px 0 40px 0;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    border-bottom: 2px solid #1a3255;
+                    width: 13px;
+                    position: absolute;
+                    bottom: -13px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            address {
+                height: 78px;
+                line-height: 20px;
+                margin-bottom: 28px;
+            }
+
+            p {
+                line-height: 20px;
+            }
+
+            a {
+                color: map-get($contact, 'link-color');
+
+                &:hover,
+                &:focus {
+                    text-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
+
+                    img {
+                        -webkit-filter: none;
+                    }
+                }
+            }
+
+            img {
+                -webkit-filter: grayscale(90%) brightness(30%) sepia(90%) hue-rotate(-180deg) saturate(400%) contrast(0.7);
+                filter: grayscale(90%) brightness(30%) sepia(90%) hue-rotate(-180deg) saturate(400%) contrast(0.7);
+            
+                @include media('<desktop') {
+                    width: 180px;
+                }
+            }
+        }
+
+        .col+.col {
+
+            @include media('<tablet') {
+                margin-top: 40px;
+            }
+        }
+    }
+}

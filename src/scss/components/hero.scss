@@ -1,0 +1,101 @@
+.hero {
+    position: relative;
+    height: 772px;
+    width: 100%;
+    padding-top: 330px;
+    background: 100% 100%/cover;
+    text-align: center;
+    color: map-get($hero, 'section-font-color');
+
+    @include media('<widescreen') {
+        height: 600px;
+        padding-top: 250px;
+    }
+
+    @include media('<desktop') {
+        height: 550px;
+        padding-top: 200px;
+    }
+
+    .text-wrap {
+        display: block;
+        max-width: 515px;
+        padding: 0 15px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            position: relative;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 300;
+
+
+            &:after {
+                content: '';
+                display: block;
+                border-bottom: 1px solid #fff;
+                width: 250px;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .scroll-button {
+        position: absolute;
+        border: 1px solid map-get($hero, 'button-border-color');
+        padding: 15px;
+        bottom: 10%;
+
+        @include media('<desktop') {
+            display: none;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 1px 1px 5px rgba(#fff, 0.5);
+        }
+
+        i {
+            font-size: 20px;
+            color: map-get($hero, 'section-font-color');
+        }
+    }
+
+    .stop-button, 
+    .play-button {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color:  map-get($hero, 'section-font-color');
+
+        @include media('<desktop') {
+            display: none;
+        }
+
+        &:hover,
+        &:focus {
+            text-shadow: 1px 1px 5px rgba(#fff, 0.5);
+        }
+
+        i {
+            font-size: 30px;
+            color:  map-get($hero, 'section-font-color');
+            margin-left: 13px;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}
+

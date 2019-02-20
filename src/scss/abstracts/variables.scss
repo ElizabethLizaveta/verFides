@@ -1,0 +1,81 @@
+$breakpoints: (phone: 480px, tablet: 768px, desktop: 980px, widescreen: 1200px);
+ 
+$headings: (
+    'h1-font-size': 4.875rem, //78px
+    'h2-font-size': 2.75rem, //44px
+    'h3-font-size': 1.625rem, //26px
+    'h4-font-size': 1.25rem, //20px
+    'h5-font-size': 1rem //16px
+);
+
+$base: (
+    'base-font-size': 14px,  
+    'base-font-family': unquote("'Open Sans', sans-serif"),
+);
+
+$main-header: (
+    'section-font-color': #fff,
+    'section-mob-bg': #043355,
+    'hamburger-field-bg': #fff,
+    'hamburger-button-color': #444444,
+    'main-nav-mob-bg': rgba(#506a85, 0.9),
+);
+
+$hero: (
+    'section-font-color': #fff,
+    'button-border-color': #fff,
+);
+
+$welcome: (
+    'section-font-color': #787878,
+);
+
+$management: (
+    'section-font-color': #787878,
+    'link-color': #1a3255,
+    'button-border-color': #1a3255,
+);
+
+$tax: (
+    'section-font-color': #fff,
+    'button-border-color': #fff,
+);
+
+$resources: (
+    'section-font-color': #787878,
+    'link-color': #1a3255,
+    'button-border-color': #1a3255,
+);
+
+$contact: (
+    'section-font-color': #787878,
+    'link-color': #1a3255,
+);
+
+$supervisory: (
+    'section-font-color': #787878,
+);
+  
+$forms: (
+    'section-font-color': #fff,
+    'button-border-color': #fff,
+    'section-bg': #1a3255,
+    'input-font-color': #fff,
+    'placeholder-font-color': #95a0b0,
+    'form-input-bg': #2a4061,
+);
+
+$footer-top: (
+    'section-bg':  #2f4052,
+    'section-font-size': 14px,
+    'section-font-color': #a3b1bf,
+);
+
+$footer-nav: (
+    'section-bg':  #283645,
+    'section-font-size': 14px,
+    'section-font-color': #a3b1bf,
+);
+
+//image path setting
+$imgpath: '../../assets/images';
