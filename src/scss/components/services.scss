@@ -50,7 +50,7 @@
             height: 100%;
             overflow: visible;
 
-            @include media('<1400px') {
+            @include media('<1300px') {
                 max-width: 722px;
             }
         }
@@ -58,17 +58,13 @@
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
 
             h2 {
-                margin-top: 25px;
+                margin: 25px 0 5px 0;
                 font-size: 18px;
             }
 

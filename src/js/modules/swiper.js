@@ -12,7 +12,7 @@ const SwiperSlide = {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        1400: {
+        1300: {
           slidesPerView: 3,
         },
       },
