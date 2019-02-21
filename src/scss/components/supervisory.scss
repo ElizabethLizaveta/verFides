@@ -1,16 +1,16 @@
 .supervisory {
-    padding: 100px 0;
+    padding: 95px 0;
     font-size: 14px;
     color: map-get($welcome, 'section-font-color');
     text-align: center;
 
-    @include media('<tablet') {
+    @include media('<desktop') {
         display: none;
     }
 
     h1 {
         position: relative;
-        margin-bottom: 76px;
+        margin-bottom: 68px;
         font-size: 36px;
         font-style: italic;
         font-weight: 300;

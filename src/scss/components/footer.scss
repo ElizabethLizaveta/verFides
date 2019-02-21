@@ -1,7 +1,11 @@
 .main-footer {
     .currency-feed {
         width: 100%;
-        border-top: 1px solid #a5a5a5;
+        border-top: 1px solid #dddddd;
+
+        @include media('<desktop') {
+            display: none;
+        }
 
         .currency-top {
             height: 28px;
@@ -22,6 +26,11 @@
                 color: map-get($currency-feed, 'currency-top-font-color');
                 margin: 0 10px;
                 padding: 0;
+
+                &:hover,
+                &:focus {
+                    text-shadow: 1px 1px 5px rgba(#787878, 0.5);
+                }
             }
 
             .current-currency {
@@ -61,7 +70,7 @@
                     span {
                         margin-right: 5px;
                         color: map-get($currency-feed, 'currency-main-font-color');
-                        
+
                         @include media('<widescreen') {
                             margin-right: 0;
                             margin-bottom: 3px;
@@ -70,11 +79,126 @@
                 }
             }
         }
-
-
     }
 
+    .footer-links {
+        padding: 30px 25px;
+        border-bottom: 1px solid #dddddd;
 
+        @include media('<tablet') {
+            border-top: 2px solid #173356;
+            border-bottom: none;
+        }
 
+        .footer-navigation {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 16px;
 
+            @include media('<tablet') {
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 180px;
+                margin-bottom: 0;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                border-bottom: 1px solid #769eca;
+                width: 250px;
+                position: absolute;
+                bottom: -16px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                @include media('<tablet') {
+                    width: 100%;
+                    bottom: -35px;
+                    border-bottom: 1px solid #dddddd;
+                }
+            }
+
+            li {
+                margin-right: 24px;
+                line-height: 30px;
+
+                a {
+                    color: map-get($footer-links, 'navigation-font-color');
+
+                    &:hover,
+                    &:focus {
+                        text-shadow: 1px 1px 5px rgba(#787878, 0.5);
+                    }
+
+                    i {
+                        font-size: 12px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .footer-services {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 14px;
+
+            @include media('<tablet') {
+                display: none;
+            }
+
+            li {
+                margin-left: 20px;
+                line-height: 27px;
+
+                a {
+                    color: map-get($footer-links, 'services-font-color');
+
+                    &:hover,
+                    &:focus {
+                        text-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-logo {
+        padding: 18px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: map-get($footer-logo, 'section-font-color');
+
+        p {
+            margin-top: 5px;
+        }
+    }
+
+    .footer-info {
+        display: none;
+        padding: 15px 30px;
+        font-size: 14px;
+        color: map-get($footer-logo, 'section-font-color');
+
+        @include media('<tablet') {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }

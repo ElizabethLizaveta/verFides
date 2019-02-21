@@ -16,6 +16,10 @@
         font-style: italic;
         font-weight: 300;
 
+        @include media('<desktop') {
+            margin-bottom: 70px;
+        }
+
         &:after {
             content: '';
             display: block;
@@ -30,14 +34,20 @@
 
     .col {
         text-align: center;
-        width: 25%;
+        width: 24%;
 
         @include media('<tablet') {
             width: 50%;
         }
+
+        @include media('<330px') {
+            width: 100%;
+        }
     }
 
     img {
+
+        width: 180px;
 
         @include media('<desktop') {
             width: 140px;
@@ -53,12 +63,12 @@
     }
 
     h2 {
-        margin-top: 23px;
+        margin-top: 18px;
         font-size: 18px;
     }
 
     p {
-        line-height: 20px;
+        line-height: 22px;
 
         @include media('<phone') {
            font-size: 12px;
@@ -69,7 +79,7 @@
         margin-bottom: 40px;
 
         i {
-            font-size: 18px;
+            font-size: 15px;
         }
 
         a {
@@ -90,17 +100,17 @@
         }
 
         a+a {
-            margin-left: 11px;
+            margin-left: 5px;
 
             i {
-                margin-right: 9px;
+                margin-right: 5px;
             }
         }
     }
 
     .see-button {
         border: 1px solid map-get($management, 'button-border-color');
-        padding: 18px 52px;
+        padding: 15px 52px;
         font-weight: 700;
 
         &:hover,

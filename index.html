@@ -12,18 +12,52 @@
 
   <style>
     .hero {
-          background-image: url('assets/images/hero-bg-small.jpg');
+          background-image: url('assets/images/hero-bg-extrasmall.jpg');
+    }
+    .full-img {
+          background-image: url('assets/images/full-img-extrasmall.jpg');
+    }  
+    .tax {
+          background-image: url('assets/images/tax-bg-extrasmall.jpg');
     }
 
-    .full-img {
-      background-image: url('assets/images/full-img-small.jpg');
-    }  
-
-    .tax {
-      background-image: url('assets/images/tax-bg-extralarge.jpg');
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        .hero {
+          background-image: url('assets/images/hero-bg-extrasmall@2x.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-extrasmall@2x.jpg');
+        }
+        .tax {
+          background-image: url('assets/images/tax-bg-extrasmall.jpg');
+        }
     }
     
-    @media (min-width: 980px){
+    @media (min-width: 480px) {
+       .hero {
+          background-image: url('assets/images/hero-bg-small.jpg');
+        }
+       .full-img {
+          background-image: url('assets/images/full-img-small.jpg');
+        }  
+        .tax {
+          background-image: url('assets/images/tax-bg-small.jpg');
+        }
+    }
+
+    @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (min-resolution: 144dpi) {
+        .hero {
+          background-image: url('assets/images/hero-bg-small@2x.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-small@2x.jpg');
+        }
+        .tax {
+          background-image: url('assets/images/tax-bg-small@2x.jpg');
+        }
+    }
+
+    @media (min-width: 980px) {
        .hero {
           background-image: url('assets/images/hero-bg-extralarge.jpg');
         }
@@ -32,6 +66,24 @@
         }
         .full-img {
           background-image: url('assets/images/full-img-extralarge.jpg');
+        }
+        .tax {
+          background-image: url('assets/images/tax-bg-extralarge.jpg');
+        }
+    }
+
+    @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi) {
+        .hero {
+          background-image: url('assets/images/hero-bg-extralarge@2x.jpg');
+        }
+        .hero-onpause {
+          background-image: url('assets/images/hero-video-onpause@2x.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-extralarge@2x.jpg');
+        }
+        .tax {
+          background-image: url('assets/images/tax-bg-extralarge@2x.jpg');
         }
     }
   </style>
@@ -129,35 +181,35 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/images/slide-1.png">
+              <img src="assets/images/slide-1.png" alt="service-1">
               <h2>Trust &amp; Estate <br>Planning</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-2.png">
+              <img src="assets/images/slide-2.png" alt="service-2">
               <h2>Tax Advisory <br>Services</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-3.png">
+              <img src="assets/images/slide-3.png" alt="service-3">
               <h2>Employment Solutions: <br>UK Businesses</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-4.png">
+              <img src="assets/images/slide-4.png" alt="service-4">
               <h2>UK Real Estate <br>Structurings</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-5.png">
+              <img src="assets/images/slide-5.png" alt="service-5">
               <h2>Coming to the UK: <br>Businesses &amp; Individuals</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-6.png">
+              <img src="assets/images/slide-6.png" alt="service-6">
               <h2>Wealth Structure &amp; <br>Family Office</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-7.png">
+              <img src="assets/images/slide-7.png" alt="service-7">
               <h2>Corporate &amp; Fiduciary <br>Services</h2>
             </div>
             <div class="swiper-slide">
-              <img src="assets/images/slide-8.png">
+              <img src="assets/images/slide-8.png" alt="service-8">
               <h2>Accountancy &amp; Tax <br>Compliance</h2>
             </div>
           </div>
@@ -168,35 +220,35 @@
       </div>
       <div class="services-full">
         <div class="service">
-          <img src="assets/images/slide-1.png">
+          <img src="assets/images/slide-1.png" alt="service-1">
           <h2>Trust &amp; Estate Planning</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-2.png">
+          <img src="assets/images/slide-2.png" alt="service-2">
           <h2>Tax Advisory Services</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-3.png">
+          <img src="assets/images/slide-3.png" alt="service-3">
           <h2>Employment Solutions: UK Businesses</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-4.png">
+          <img src="assets/images/slide-4.png" alt="service-4">
           <h2>UK Real Estate Structurings</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-5.png">
+          <img src="assets/images/slide-5.png" alt="service-5">
           <h2>Coming to the UK: Businesses &amp; Individuals</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-6.png">
+          <img src="assets/images/slide-6.png" alt="service-6">
           <h2>Wealth Structure &amp; Family Office</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-7.png">
+          <img src="assets/images/slide-7.png" alt="service-7">
           <h2>Corporate &amp; Fiduciary Services</h2>
         </div>
         <div class="service">
-          <img src="assets/images/slide-8.png">
+          <img src="assets/images/slide-8.png" alt="service-8">
           <h2>Accountancy &amp; Tax Compliance</h2>
         </div>
       </div>
@@ -208,7 +260,11 @@
         <h1>Management</h1>
         <div class="flex-wrap">
           <div class="col">
-            <img src="assets/images/marano.png" alt="Marco Marano">
+            <picture>
+              <img src="assets/images/marano.png" srcset="assets/images/marano.png 1x,
+                      assets/images/marano@2x.png 2x"
+                alt="Marco Marano">
+            </picture>
             <h2>Marco Marano</h2>
             <p>Managing director</p>
             <div class="contact-links">
@@ -217,7 +273,11 @@
             </div>
           </div>
           <div class="col">
-            <img src="assets/images/borea.png" alt="Carlo Borea">
+            <picture>
+              <img src="assets/images/borea.png" srcset="assets/images/borea.png 1x,
+                          assets/images/borea@2x.png 2x"
+                alt="Carlo Borea">
+            </picture>
             <h2>Carlo Borea</h2>
             <p>Director</p>
             <div class="contact-links">
@@ -226,7 +286,11 @@
             </div>
           </div>
           <div class="col">
-            <img src="assets/images/vacri.png" alt="Roberta Vacri">
+            <picture>
+              <img src="assets/images/vacri.png" srcset="assets/images/vacri.png 1x,
+                          assets/images/vacri@2x.png 2x"
+                alt="Roberta Vacri">
+            </picture>
             <h2>Roberta Vacri</h2>
             <p>Director</p>
             <div class="contact-links">
@@ -235,7 +299,11 @@
             </div>
           </div>
           <div class="col">
-            <img src="assets/images/marano.png" alt="Terence Pay">
+            <picture>
+              <img src="assets/images/marano.png" srcset="assets/images/marano.png 1x,
+                          assets/images/marano@2x.png 2x"
+                alt="Terence Pay">
+            </picture>
             <h2>Terence Pay</h2>
             <p>International Tax Advisory</p>
             <div class="contact-links">
@@ -281,12 +349,24 @@
           <h2>Brochures Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
           <div class="flex-wrap">
             <div class="col">
-              <a href="#"><img src="assets/images/brochure-2015.jpg" alt="brochure-2015"></a>
+              <a href="#">
+                <picture>
+                  <img src="assets/images/brochure-2015.jpg" srcset="assets/images/brochure-2015.jpg 1x,
+                                  assets/images/brochure-2015@2x.jpg 2x"
+                    alt="brochure-2015">
+                </picture>
+              </a>
               <h2>verFides Service Brochure 2015</h2>
               <a href="#" class="download">Download PDF<i class="icon-arrow-thin-down"></i></a>
             </div>
             <div class="col">
-              <a href="#"><img src="assets/images/report-2015.jpg" alt="report-2015"></a>
+              <a href="#">
+                <picture>
+                  <img src="assets/images/report-2015.jpg" srcset="assets/images/report-2015.jpg 1x,
+                                      assets/images/report-2015@2x.jpg 2x"
+                    alt="report-2015">
+                </picture>
+              </a>
               <h2>verFides Financial Report 2014/15</h2>
               <a href="#" class="download">Download PDF<i class="icon-arrow-thin-down"></i></a>
             </div>
@@ -309,7 +389,7 @@
     <section class="contact">
       <div class="container">
         <div class="title-wrap">
-          <h1>Welcome to verFides</h1>
+          <h1>Contact Us</h1>
           <p>We’re based in London and have offices in key international financial centres. We also partner
             with outstanding professionals worldwide – so wherever you or your clients are, we can deliver
             the very best knowledge, resources and service. </p>
@@ -330,34 +410,33 @@
           </div>
           <div class="col">
             <a href="#"><img src="assets/images/map-2.png" alt="map-2"></a>
-            <h2>London - UK</h2>
-            <address>5th Floor
-              <br>86 Jermyn Street
-              <br>St James, London
-              <br>SW1Y 6AW
+            <h2>Dublin - Ireland</h2>
+            <address>68 Fitzwilliam Square
+              <br>Dublin 2
+              <br>Ireland
             </address>
-            <p>Telephone:<a href="tel:+44(0)2079307111"> + 44 (0)20 7930 7111</a></p>
-            <p>Facsimile:<a href="tel:+44(0)2079307444"> + 44 (0)20 7930 7444</a></p>
-            <p>Email:<a href="mailto:london@verfides.net"> london@verfides.net</a></p>
+            <p>Telephone:<a href="tel:+35316629310"> + 353 1 662 9310</a></p>
+            <p>Facsimile:<a href="tel:+35316629311 "> + 353 1 662 9311</a></p>
+            <p>Email:<a href="mailto:dublin@verfides.net"> dublin@verfides.net</a></p>
           </div>
           <div class="col">
             <a href="#"><img src="assets/images/map-3.png" alt="map-3"></a>
-            <h2>London - UK</h2>
-            <address>5th Floor
-              <br>86 Jermyn Street
-              <br>St James, London
-              <br>SW1Y 6AW
+            <h2>Nicosia - Cyprus</h2>
+            <address>30 Costa Anaxagora
+              <br>Storikon Building
+              <br>1st Floor, Office 102
+              <br>CY - 2014 Nicosia
             </address>
-            <p>Telephone:<a href="tel:+44(0)2079307111"> + 44 (0)20 7930 7111</a></p>
-            <p>Facsimile:<a href="tel:+44(0)2079307444"> + 44 (0)20 7930 7444</a></p>
-            <p>Email:<a href="mailto:london@verfides.net"> london@verfides.net</a></p>
+            <p>Telephone:<a href="tel:+35722007885"> + 357 22 007885</a></p>
+            <p>Facsimile:<a href="tel:+35722007886"> + 357 22 007886</a></p>
+            <p>Email:<a href="mailto:cyprus@verfides.net"> cyprus@verfides.net</a></p>
           </div>
         </div>
       </div>
     </section>
     <section class="questions">
       <div class="container">
-        <h1>Questions</h1>
+        <h1>Questions?</h1>
         <p>Feel free to send us an enquiry for an initial consultation.</p>
         <form class="form-question">
           <div class="question-form-group">
@@ -402,18 +481,49 @@
 
   <footer class="main-footer">
     <div class="currency-feed">
-<div class="currency-top"><span>Currency:</span><button type="button" class="currency-btn current-currency">GBP&#163;</button><button type="button" class="currency-btn">EUR&#128;</button><button type="button" class="currency-btn">USD&#36;</button></div>
-<div class="currency-main">
-  <ul class="currencies">
-  <li><span>United States Dollar</span>1.64880</li>
-  <li><span>Euro</span>1.11379</li> 
-  <li><span>Mexican Peso</span>0.80077</li> 
-  <li><span>British Pound Sterling</span>0.62572</li> 
-  <li><span>Hong Kong Dollar</span>7.75000</li> 
-  <li><span>Japanese Yen</span>7.75000</li> 
-</ul>
-</div>
-
+      <div class="currency-top"><span>Currency:</span><button type="button" class="currency-btn current-currency">GBP&#163;</button><button
+          type="button" class="currency-btn">EUR&#8364;</button><button type="button" class="currency-btn">USD&#36;</button>
+      </div>
+      <div class="currency-main">
+        <ul class="currencies">
+          <li><span>United States Dollar</span>1.64880</li>
+          <li><span>Euro</span>1.11379</li>
+          <li><span>Mexican Peso</span>0.80077</li>
+          <li><span>British Pound Sterling</span>0.62572</li>
+          <li><span>Hong Kong Dollar</span>7.75000</li>
+          <li><span>Japanese Yen</span>7.75000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-links">
+      <ul class="footer-navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Management</a></li>
+        <li><a href="">Resources</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Client Area</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href=""><i class="icon-linkedin"></i>LinkedIn</a></li>
+        <li><a href="">T&amp;Cs</a></li>
+      </ul>
+      <ul class="footer-services">
+        <li><a href="">Trust &amp; Estate Planning</a></li>
+        <li><a href="">Tax Advisory Services</a></li>
+        <li><a href="">Employment Solutions: UK Businesses</a></li>
+        <li><a href="">UK Real Estate Structurings</a></li>
+        <li><a href="">Coming to the UK: Businesses &amp; Individuals</a></li>
+        <li><a href="">Wealth Structure &amp; Family Office</a></li>
+        <li><a href="">Corporate &amp; Fiduciary Services</a></li>
+        <li><a href="">Accountancy &amp; Tax Compliance</a></li>
+      </ul>
+    </div>
+    <div class="footer-logo">
+      <a href="#"><img src="assets/images/footer-logo.png" alt="verFides"></a>
+      <p>&copy; Copyright 2015</p>
+    </div>
+    <div class="footer-info">
+      <p>Regulated by: MoJ (Ireland) Number: 761 5235 | FATCA</p>
     </div>
   </footer>
 

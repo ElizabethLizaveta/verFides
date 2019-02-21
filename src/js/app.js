@@ -4,6 +4,7 @@
 // Feel free with using ES6 here.
 import MobMenu from './modules/mob_menu';
 import VideoSwitch from './modules/video_switch';
+import ScrollPage from './modules/scroll_page';
 import FormValid from './modules/form_valid';
 import SwiperSlide from './modules/swiper';
 import FooterCurrency from './modules/footer_currency';
@@ -14,6 +15,7 @@ import FooterCurrency from './modules/footer_currency';
     MobMenu.menuOpen();
   });
   VideoSwitch.switch();
+  ScrollPage.scrollBottom();
   FormValid.validate();
   SwiperSlide.swiperSlide();
   FooterCurrency.switch();

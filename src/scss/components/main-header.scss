@@ -1,5 +1,5 @@
 .main-header {
-    height: 98px;
+    height: 104px;
     width: 100%;
     position: absolute;
     background: transparent;
@@ -34,9 +34,9 @@
             }
 
             img {
-                height: 40px;
+                height: 35px;
                 
-                @include media('<desktop') {
+                @include media('<widescreen') {
                     height: 30px;
                 }
 
@@ -51,7 +51,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-right: 56px;
+            margin-right: 53px;
 
             @include media('<desktop') {
                 flex-direction: column;
@@ -128,7 +128,7 @@
             }
 
             li+li {
-                margin-left: 39px;
+                margin-left: 50px;
 
                 @include media('<desktop') {
                     margin: 0;
