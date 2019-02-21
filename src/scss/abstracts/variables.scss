@@ -18,7 +18,7 @@ $main-header: (
     'section-mob-bg': #043355,
     'hamburger-field-bg': #fff,
     'hamburger-button-color': #444444,
-    'main-nav-mob-bg': rgba(#506a85, 0.9),
+    'main-nav-mob-bg': rgba(#466070, 0.9),
 );
 
 $hero: (
@@ -27,6 +27,10 @@ $hero: (
 );
 
 $welcome: (
+    'section-font-color': #787878,
+);
+
+$services: (
     'section-font-color': #787878,
 );
 
@@ -65,17 +69,12 @@ $forms: (
     'form-input-bg': #2a4061,
 );
 
-$footer-top: (
-    'section-bg':  #2f4052,
-    'section-font-size': 14px,
-    'section-font-color': #a3b1bf,
+$currency-feed: (
+    'currency-top-font-color': #787878,
+    'currency-main-bg': #1a3255,
+    'currency-main-font-color': #769eca,
+    'currency-color': #fff,
 );
 
-$footer-nav: (
-    'section-bg':  #283645,
-    'section-font-size': 14px,
-    'section-font-color': #a3b1bf,
-);
-
-//image path setting
-$imgpath: '../../assets/images';
+ 
+ 

@@ -1,0 +1,80 @@
+.main-footer {
+    .currency-feed {
+        width: 100%;
+        border-top: 1px solid #a5a5a5;
+
+        .currency-top {
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: map-get($currency-feed, 'currency-top-font-color');
+
+            span {
+                margin-right: 10px;
+            }
+
+            .currency-btn {
+                font-size: 14px;
+                font-weight: 700;
+                color: map-get($currency-feed, 'currency-top-font-color');
+                margin: 0 10px;
+                padding: 0;
+            }
+
+            .current-currency {
+                color: #769eca;
+            }
+        }
+
+        .currency-main {
+            height: 38px;
+            background: map-get($currency-feed, 'currency-main-bg');
+
+            @include media('<widescreen') {
+                height: 55px;
+            }
+
+            .currencies {
+                max-width: 1250px;
+                height: 100%;
+                margin: 0 auto;
+                padding: 0 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 16px;
+                    color: map-get($currency-feed, 'currency-color');
+
+                    @include media('<widescreen') {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    span {
+                        margin-right: 5px;
+                        color: map-get($currency-feed, 'currency-main-font-color');
+                        
+                        @include media('<widescreen') {
+                            margin-right: 0;
+                            margin-bottom: 3px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+}

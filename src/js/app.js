@@ -5,6 +5,8 @@
 import MobMenu from './modules/mob_menu';
 import VideoSwitch from './modules/video_switch';
 import FormValid from './modules/form_valid';
+import SwiperSlide from './modules/swiper';
+import FooterCurrency from './modules/footer_currency';
 
 (($) => {
   // When DOM is ready
@@ -13,4 +15,6 @@ import FormValid from './modules/form_valid';
   });
   VideoSwitch.switch();
   FormValid.validate();
+  SwiperSlide.swiperSlide();
+  FooterCurrency.switch();
 })(jQuery);
