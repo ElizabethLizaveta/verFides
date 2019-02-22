@@ -6,13 +6,19 @@ const SwiperSlide = {
     const swiper = new Swiper('.swiper-container', {
       loop: true,
       slidesPerView: 4,
-      spaceBetween: 0,
+      spaceBetween: 57,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        1300: {
+        979: {
+          direction: 'vertical',
+          slidesPerView: 'all',
+          spaceBetween: 0,
+          navigation: false,
+        },
+        1299: {
           slidesPerView: 3,
         },
       },

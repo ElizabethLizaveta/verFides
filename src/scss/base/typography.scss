@@ -3,3 +3,17 @@ html {
     font-family: map-get($base, 'base-font-family');
 }
  
+.h1 {
+    position: relative;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

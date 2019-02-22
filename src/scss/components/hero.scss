@@ -6,6 +6,7 @@
     background: 100% 100%/cover;
     text-align: center;
     color: map-get($hero, 'section-font-color');
+    overflow: hidden;
 
     @include media('<widescreen') {
         height: 600px;
@@ -21,6 +22,19 @@
         padding-top: 180px;
     }
 
+    video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 772px;
+        width: auto;
+        background-size: cover;
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+    }
+
     .text-wrap {
         display: block;
         max-width: 530px;
@@ -28,23 +42,13 @@
         margin: 0 auto;
         text-align: center;
 
-        h1 {
-            position: relative;
-            font-size: 36px;
+        .h1 {
             line-height: 43px;
-            font-style: italic;
-            font-weight: 300;
-
 
             &:after {
-                content: '';
-                display: block;
                 border-bottom: 1px solid #fff;
                 width: 250px;
-                position: absolute;
                 bottom: -33px;
-                left: 50%;
-                transform: translateX(-50%);
             }
         }
     }
@@ -70,7 +74,7 @@
         }
     }
 
-    .stop-button, 
+    .stop-button,
     .play-button {
         position: absolute;
         bottom: 32px;
@@ -81,7 +85,7 @@
         font-weight: 700;
         letter-spacing: 0.3em;
         text-transform: uppercase;
-        color:  map-get($hero, 'section-font-color');
+        color: map-get($hero, 'section-font-color');
 
         @include media('<desktop') {
             display: none;
@@ -94,7 +98,7 @@
 
         i {
             font-size: 30px;
-            color:  map-get($hero, 'section-font-color');
+            color: map-get($hero, 'section-font-color');
             margin-left: 1px;
         }
     }
@@ -103,4 +107,3 @@
         display: none;
     }
 }
-

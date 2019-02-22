@@ -85,7 +85,7 @@
         padding: 30px 25px;
         border-bottom: 1px solid #dddddd;
 
-        @include media('<tablet') {
+        @include media('<desktop') {
             border-top: 2px solid #173356;
             border-bottom: none;
         }

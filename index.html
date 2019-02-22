@@ -58,7 +58,7 @@
     }
 
     @media (min-width: 980px) {
-       .hero {
+      .video-hero {
           background-image: url('assets/images/hero-bg-extralarge.jpg');
         }
         .hero-onpause {
@@ -73,10 +73,10 @@
     }
 
     @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi) {
-        .hero {
+      .video-hero {
           background-image: url('assets/images/hero-bg-extralarge@2x.jpg');
         }
-        .hero-onpause {
+      .hero-onpause {
           background-image: url('assets/images/hero-video-onpause@2x.jpg');
         }
         .full-img {
@@ -120,18 +120,20 @@
 
   <main>
     <section class="hero">
+      <video class="video-hero" src="assets/video/testvideo.mp4" poster="assets/images/transparent.png">
+      </video>
       <div class="text-wrap">
-        <h1>Wealth structuring, preservation
+        <h1 class="h1">Wealth structuring, preservation
           and protection.</h1>
       </div>
       <button type="button" class="scroll-button"><i class="icon-arrow-thin-down"></i></button>
-      <button type="button" class="stop-button">stop<i class="icon-pause"></i></button>
-      <button type="button" class="play-button hide">play<i class="icon-play_arrow"></i></button>
+      <button type="button" class="stop-button hide">stop<i class="icon-pause"></i></button>
+      <button type="button" class="play-button">play<i class="icon-play_arrow"></i></button>
     </section>
     <section class="welcome">
       <div class="container">
         <div class="title-wrap">
-          <h1>Welcome to verFides</h1>
+          <h1 class="h1">Welcome to verFides</h1>
           <p>We’re a professional advisor and provider of specialised services in the wealth
             management sector.</p>
         </div>
@@ -176,80 +178,62 @@
       </div>
     </section>
     <section class="services">
-      <h1>Services</h1>
+      <h1 class="h1">Services</h1>
       <div class="swiper-wrap">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="assets/images/slide-1.png" alt="service-1">
-              <h2>Trust &amp; Estate <br>Planning</h2>
+              <h2 class="h2">Trust &amp; Estate Planning</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-2.png" alt="service-2">
-              <h2>Tax Advisory <br>Services</h2>
+              <h2 class="h2">Tax Advisory Services</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-3.png" alt="service-3">
-              <h2>Employment Solutions: <br>UK Businesses</h2>
+              <h2 class="h2">Employment Solutions: UK Businesses</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-4.png" alt="service-4">
-              <h2>UK Real Estate <br>Structurings</h2>
+              <h2 class="h2">UK Real Estate Structurings</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-5.png" alt="service-5">
-              <h2>Coming to the UK: <br>Businesses &amp; Individuals</h2>
+              <h2 class="h2">Coming to the UK: Businesses &amp; Individuals</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-6.png" alt="service-6">
-              <h2>Wealth Structure &amp; <br>Family Office</h2>
+              <h2 class="h2">Wealth Structure &amp; Family Office</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-7.png" alt="service-7">
-              <h2>Corporate &amp; Fiduciary <br>Services</h2>
+              <h2 class="h2">Corporate &amp; Fiduciary Services</h2>
             </div>
             <div class="swiper-slide">
               <img src="assets/images/slide-8.png" alt="service-8">
-              <h2>Accountancy &amp; Tax <br>Compliance</h2>
+              <h2 class="h2">Accountancy &amp; Tax Compliance</h2>
             </div>
           </div>
           <!-- Add Arrows -->
-          <div class="swiper-button-next"><i class="icon-arrow-right"></i><i class="icon-keyboard_arrow_right"></i></div>
-          <div class="swiper-button-prev"><i class="icon-keyboard_arrow_left"></i><i class="icon-arrow-left"></i></div>
-        </div>
-      </div>
-      <div class="services-full">
-        <div class="service">
-          <img src="assets/images/slide-1.png" alt="service-1">
-          <h2>Trust &amp; Estate Planning</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-2.png" alt="service-2">
-          <h2>Tax Advisory Services</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-3.png" alt="service-3">
-          <h2>Employment Solutions: UK Businesses</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-4.png" alt="service-4">
-          <h2>UK Real Estate Structurings</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-5.png" alt="service-5">
-          <h2>Coming to the UK: Businesses &amp; Individuals</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-6.png" alt="service-6">
-          <h2>Wealth Structure &amp; Family Office</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-7.png" alt="service-7">
-          <h2>Corporate &amp; Fiduciary Services</h2>
-        </div>
-        <div class="service">
-          <img src="assets/images/slide-8.png" alt="service-8">
-          <h2>Accountancy &amp; Tax Compliance</h2>
+          <div class="swiper-button-next">
+            <i class="icon-arrow-right"></i>
+            <svg  class="keyboard-arrow-right" xmlns="http://www.w3.org/2000/svg" width="47" height="74" viewBox="0 0 37.000000 72.000000">
+              <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#787878" stroke="none">
+                <path d="M0 713 c0 -4 78 -85 172 -180 l173 -173 -175 -175 c-96 -96 -171
+                -178 -167 -182 4 -4 90 75 190 175 l182 182 -180 180 c-167 167 -195 192 -195 173z" />
+              </g>
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="icon-arrow-left"></i>
+            <svg class="keyboard-arrow-left" xmlns="http://www.w3.org/2000/svg" width="47" height="74" viewBox="0 0 37.000000 72.000000">
+              <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#787878" stroke="none">
+                <path d="M175 540 l-180 -180 182 -182 c100 -100 186 -179 190 -175 4 4 -71
+                 86 -167 182 l-175 175 173 173 c94 95 172 176 172 180 0 19 -28 -6 -195 -173z" />
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -257,7 +241,7 @@
     </div>
     <section class="management">
       <div class="container">
-        <h1>Management</h1>
+        <h1 class="h1">Management</h1>
         <div class="flex-wrap">
           <div class="col">
             <picture>
@@ -265,7 +249,7 @@
                       assets/images/marano@2x.png 2x"
                 alt="Marco Marano">
             </picture>
-            <h2>Marco Marano</h2>
+            <h2 class="h2">Marco Marano</h2>
             <p>Managing director</p>
             <div class="contact-links">
               <a href="#"><i class="icon-linkedin"></i></a>
@@ -278,7 +262,7 @@
                           assets/images/borea@2x.png 2x"
                 alt="Carlo Borea">
             </picture>
-            <h2>Carlo Borea</h2>
+            <h2 class="h2">Carlo Borea</h2>
             <p>Director</p>
             <div class="contact-links">
               <a href="#"><i class="icon-linkedin"></i></a>
@@ -291,7 +275,7 @@
                           assets/images/vacri@2x.png 2x"
                 alt="Roberta Vacri">
             </picture>
-            <h2>Roberta Vacri</h2>
+            <h2 class="h2">Roberta Vacri</h2>
             <p>Director</p>
             <div class="contact-links">
               <a href="#"><i class="icon-linkedin"></i></a>
@@ -304,7 +288,7 @@
                           assets/images/marano@2x.png 2x"
                 alt="Terence Pay">
             </picture>
-            <h2>Terence Pay</h2>
+            <h2 class="h2">Terence Pay</h2>
             <p>International Tax Advisory</p>
             <div class="contact-links">
               <a href="#"><i class="icon-linkedin"></i></a>
@@ -317,7 +301,7 @@
     </section>
     <section class="tax">
       <div class="container">
-        <h1>Tax at a Glance</h1>
+        <h1 class="h1">Tax at a Glance</h1>
         <p>View international tax rates with our built-in feature.</p>
         <button type="button" class="view-button">View Intl Tax rates<i class="icon-arrow-right"></i></button>
       </div>
@@ -325,20 +309,20 @@
     <section class="resources">
       <div class="container">
         <div class="text-wrap">
-          <h1>Resources</h1>
+          <h1 class="h1">Resources</h1>
           <p>We regularly publish technical articles and guides on our website and in professional publications on
             various tax and structuring matters, including updates on developments in UK and international tax. Click
             “See All” below to view our full library.</p>
         </div>
         <div class="flex-wrap articles">
           <div class="col">
-            <h2>Spain: ECJ Rules Inheritance Tax Discriminatory</h2>
+            <h2 class="h2">Spain: ECJ Rules Inheritance Tax Discriminatory</h2>
             <p>The European Court of Justice (ECJ) has ruled that Spain is in breach of European Union treaties by
               imposing a higher rate of gift and inheritance taxes on non-residents.</p>
             <a href="#" class="read-more">Read More<i class="icon-arrow-right"></i></a>
           </div>
           <div class="col">
-            <h2>UK: Remittance Basis Restricted For Loan Collateral</h2>
+            <h2 class="h2">UK: Remittance Basis Restricted For Loan Collateral</h2>
             <p>HMRC has announced the sudden withdrawal of a concession whereby foreign income and gains used as loan
               collateral were not considered to have been remitted to the UK.</p>
             <a href="#" class="read-more">Read More<i class="icon-arrow-right"></i></a>
@@ -346,7 +330,7 @@
         </div>
         <button type="button" class="see-button">See All<i class="icon-arrow-right"></i></button>
         <div class="downloads">
-          <h2>Brochures Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+          <h2 class="h2">Brochures Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
           <div class="flex-wrap">
             <div class="col">
               <a href="#">
@@ -356,7 +340,7 @@
                     alt="brochure-2015">
                 </picture>
               </a>
-              <h2>verFides Service Brochure 2015</h2>
+              <h2 class="h2">verFides Service Brochure 2015</h2>
               <a href="#" class="download">Download PDF<i class="icon-arrow-thin-down"></i></a>
             </div>
             <div class="col">
@@ -367,7 +351,7 @@
                     alt="report-2015">
                 </picture>
               </a>
-              <h2>verFides Financial Report 2014/15</h2>
+              <h2 class="h2">verFides Financial Report 2014/15</h2>
               <a href="#" class="download">Download PDF<i class="icon-arrow-thin-down"></i></a>
             </div>
           </div>
@@ -376,7 +360,7 @@
     </section>
     <section class="registration">
       <div class="container">
-        <h2>Register here for our mailing list and we will keep you up to date with news from Verfides.</h2>
+        <h2 class="h2">Register here for our mailing list and we will keep you up to date with news from Verfides.</h2>
         <form class="form-registration">
           <div class="registration-form-group">
             <input type="text" id="registration-name" placeholder="Name">
@@ -389,7 +373,7 @@
     <section class="contact">
       <div class="container">
         <div class="title-wrap">
-          <h1>Contact Us</h1>
+          <h1 class="h1">Contact Us</h1>
           <p>We’re based in London and have offices in key international financial centres. We also partner
             with outstanding professionals worldwide – so wherever you or your clients are, we can deliver
             the very best knowledge, resources and service. </p>
@@ -398,7 +382,7 @@
           <div class="col">
             <a href="#">
               <img src="assets/images/map-1.png" alt="map-1"></a>
-            <h2>London - UK</h2>
+            <h2 class="h2">London - UK</h2>
             <address>5th Floor
               <br>86 Jermyn Street
               <br>St James, London
@@ -410,7 +394,7 @@
           </div>
           <div class="col">
             <a href="#"><img src="assets/images/map-2.png" alt="map-2"></a>
-            <h2>Dublin - Ireland</h2>
+            <h2 class="h2">Dublin - Ireland</h2>
             <address>68 Fitzwilliam Square
               <br>Dublin 2
               <br>Ireland
@@ -421,7 +405,7 @@
           </div>
           <div class="col">
             <a href="#"><img src="assets/images/map-3.png" alt="map-3"></a>
-            <h2>Nicosia - Cyprus</h2>
+            <h2 class="h2">Nicosia - Cyprus</h2>
             <address>30 Costa Anaxagora
               <br>Storikon Building
               <br>1st Floor, Office 102
@@ -436,7 +420,7 @@
     </section>
     <section class="questions">
       <div class="container">
-        <h1>Questions?</h1>
+        <h1 class="h1">Questions?</h1>
         <p>Feel free to send us an enquiry for an initial consultation.</p>
         <form class="form-question">
           <div class="question-form-group">
@@ -447,8 +431,7 @@
               <input type="tel" id="question-phone" placeholder="Telephone&ast;">
             </div>
             <div class="col">
-              <textarea name="enquiry" id="question-text" placeholder="Enquiry&ast;" maxlength="290"></textarea><i
-                class="icon-arrow-down-right"></i>
+              <textarea name="enquiry" id="question-text" placeholder="Enquiry&ast;" maxlength="290"></textarea>
             </div>
           </div>
           <button type="submit" class="question-button">Submit<i class="icon-arrow-right"></i></button>
@@ -457,7 +440,7 @@
     </section>
     <section class="supervisory">
       <div class="container">
-        <h1>Supervisory &amp; Regulatory Bodies</h1>
+        <h1 class="h1">Supervisory &amp; Regulatory Bodies</h1>
         <div class="flex-wrap">
           <div class="col">
             <p>Verfides is registered with and supervised by HM Revenue and Customs as a Trust and

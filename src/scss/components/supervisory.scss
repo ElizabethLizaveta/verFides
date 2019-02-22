@@ -5,25 +5,16 @@
     text-align: center;
 
     @include media('<desktop') {
-        display: none;
+        padding: 40px 0;
     }
 
-    h1 {
-        position: relative;
+    .h1 {
         margin-bottom: 68px;
-        font-size: 36px;
-        font-style: italic;
-        font-weight: 300;
 
         &:after {
-            content: '';
-            display: block;
             border-bottom: 1px solid #769eca;
             width: 250px;
-            position: absolute;
             bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
         }
     }
 
@@ -34,9 +25,25 @@
     .flex-wrap {
         align-items: flex-start;
 
+        @include media('<tablet') {
+            flex-direction: column;
+        }
+    
+
         .col {
             width: 31%;
             text-align: left;
+
+            @include media('<tablet') {
+                width: 100%;
+            }
+        }
+
+        .col + .col {
+
+            @include media('<tablet') {
+                margin-top: 20px;
+            }
         }
     }
 

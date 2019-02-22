@@ -14,22 +14,13 @@
         margin: 0 auto;
         margin-bottom: 57px;
 
-        h1 {
-            position: relative;
+        .h1 {
             margin-bottom: 70px;
-            font-size: 36px;
-            font-style: italic;
-            font-weight: 300;
-
+            
             &:after {
-                content: '';
-                display: block;
                 border-bottom: 1px solid #769eca;
                 width: 250px;
-                position: absolute;
                 bottom: -30px;
-                left: 50%;
-                transform: translateX(-50%);
             }
         }
 
@@ -53,7 +44,7 @@
                 width: 100%;
             }
 
-            h2 {
+            .h2 {
                 position: relative;
                 margin: 25px 0 35px 0;
                 font-size: 18px;
