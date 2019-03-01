@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>verFides</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300i,700" rel="stylesheet">
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+
+  <style>
+    .hero {
+          background-image: url('assets/images/hero-bg-extrasmall.jpg');
+    }
+    .full-img {
+          background-image: url('assets/images/full-img-extrasmall.jpg');
+    } 
+    .tax::after {
+      background-image: url('assets/images/map.png');
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        .hero {
+          background-image: url('assets/images/hero-bg-extrasmall@2x.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-extrasmall@2x.jpg');
+        }
+    }
+    
+    @media (min-width: 480px) {
+       .hero {
+          background-image: url('assets/images/hero-bg-small.jpg');
+        }
+       .full-img {
+          background-image: url('assets/images/full-img-small.jpg');
+        }  
+    }
+
+    @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (min-resolution: 144dpi) {
+        .hero {
+          background-image: url('assets/images/hero-bg-small@2x.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-small@2x.jpg');
+        }
+    }
+
+    @media (min-width: 980px) {
+      .video-hero {
+          background-image: url('assets/images/hero-bg-extralarge.jpg');
+        }
+        .hero-onpause {
+          background-image: url('assets/images/hero-video-onpause.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-extralarge.jpg');
+        }
+    }
+
+    @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi) {
+      .video-hero {
+          background-image: url('assets/images/hero-bg-extralarge@2x.jpg');
+        }
+      .hero-onpause {
+          background-image: url('assets/images/hero-video-onpause@2x.jpg');
+        }
+        .full-img {
+          background-image: url('assets/images/full-img-extralarge@2x.jpg');
+        }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="flex-wrap">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/verFides-logo.png" alt="verFides">
+          </a>
+        </div>
+        <ul class="main-nav">
+          <li class="is-selected"><a href="#">Home<span class="nav-item-field"></span></a></li>
+          <li><a href="#">Services<span class="nav-item-field"></span></a></li>
+          <li><a href="#">Management<span class="nav-item-field"></span></a></li>
+          <li><a href="#">Resources<span class="nav-item-field"></span></a></li>
+          <li><a href="#">Contact Us<span class="nav-item-field"></span></a></li>
+          <li><a href="#">Client Area<span class="nav-item-field"></span></a></li>
+        </ul>
+        <div class="hamburger-field">
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video class="video-hero" src="assets/video/testvideo.mp4" poster="assets/images/transparent.png">
+      </video>
+      <div class="text-wrap">
+        <h1 class="h1">Wealth structuring, preservation
+          and protection.</h1>
+      </div>
+      <button type="button" class="scroll-button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 51 51" enable-background="new 0 0 51 51" xml:space="preserve">  <image id="image0" width="51" height="51" x="0" y="0"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAQAAACQqPihAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+        AAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+        cwAACxMAAAsTAQCanBgAAAAHdElNRQfjAhsXMSU17CZyAAAApklEQVRYw+3XIQpCQRSF4XMVTIIb
+        sCgvCjaTm3hgcxEPBLvZLbgOwWW4AG0mk9nyWxSM7yLziudOmYG5fHNum0BdVK8TxYwZM2baXw2F
+        Qqq0jc++YJqx1kXT/FJmzJgxY8bMfzKsmH2dGkZl0kx1YvJGdtpomOil9ZLYc6HmTMOdKtWbYoID
+        V248mCefmGEk+hx5skxPIsdIDFjkBx7+SZsxY8ZMtl51JtBSAbGoIwAAACV0RVh0ZGF0ZTpjcmVh
+        dGUAMjAxOS0wMi0yN1QyMzo0OTozNyswMzowMMCWFeQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTkt
+        MDItMjdUMjM6NDk6MzcrMDM6MDCxy61YAAAAAElFTkSuQmCC" />
+        </svg></button>
+      <button type="button" class="stop-button hide">stop<i class="icon-pause"></i></button>
+      <button type="button" class="play-button">play<i class="icon-play_arrow"></i></button>
+    </section>
+    <section class="welcome">
+      <div class="container">
+        <div class="title-wrap">
+          <h1 class="h1">Welcome to verFides</h1>
+          <p>We’re a professional advisor and provider of specialised services in the wealth
+            management sector.</p>
+        </div>
+        <div class="text-content">
+          <p>Our name is derived from two Latin words which express renewal
+            <br>and trust.</p>
+          <p>Our mission is to live up to our name by combining a fresh approach with integrity and experience to
+            offer a comprehensive and discreet service.</p>
+          <p>Verfides originally started its operation in the early Seventies and during its existence it has been
+            owned by multinational investment banks. Verfides is now independent and fully owned by its management.
+            Our Management team brings together qualified and highly-respected professionals with longstanding
+            experience in the provision of specialised services to private clients.</p>
+          <p>Verfides has offices in key international financial centres. To extend our reach globally and deliver
+            the very best knowledge and resources for the benefit of our clients, we also partner with outstanding
+            professionals worldwide. </p>
+          <p>We stress creativity and imagination in everything we do. Our mission is
+            <br>to live up to our name by combining a fresh approach with integrity and experience to offer a unique
+            and
+            dedicated service.</p>
+          <p>We know that the needs of each client are unique and so we tailor our advice and solutions to their
+            specific requirements. We always bring our commitment, excellence and enterprise to ensure outstanding
+            service to all our clients. We pride ourselves on our experience and approachability.</p>
+          <p>We understand that change is a fact of life and we welcome the challenges that change brings. We engage
+            with our clients to develop the right response at the right time to benefit from the opportunities change
+            presents.
+            In an increasingly complex world we are proud to bring our expertise and commitment in providing
+            outstanding services to our clients.</p>
+          <p>Our knowledge and experience together with the business creativity of our clients is a powerful
+            combination and makes Verfides a trusted partner and an experienced adviser.</p>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <h1 class="h1">Services</h1>
+      <div class="swiper-wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/slide-1.png" alt="service-1">
+              <h2 class="h2">Trust &amp; Estate Planning</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-2.png" alt="service-2">
+              <h2 class="h2">Tax Advisory Services</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-3.png" alt="service-3">
+              <h2 class="h2">Employment Solutions: UK Businesses</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-4.png" alt="service-4">
+              <h2 class="h2">UK Real Estate Structurings</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-5.png" alt="service-5">
+              <h2 class="h2">Coming to the UK: Businesses &amp; Individuals</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-6.png" alt="service-6">
+              <h2 class="h2">Wealth Structure &amp; Family Office</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-7.png" alt="service-7">
+              <h2 class="h2">Corporate &amp; Fiduciary Services</h2>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-8.png" alt="service-8">
+              <h2 class="h2">Accountancy &amp; Tax Compliance</h2>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next">
+            <i class="icon-arrow-right"></i>
+            <svg class="keyboard-arrow-right" xmlns="http://www.w3.org/2000/svg" width="47" height="74" viewBox="0 0 37.000000 72.000000">
+              <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#787878" stroke="none">
+                <path d="M0 713 c0 -4 78 -85 172 -180 l173 -173 -175 -175 c-96 -96 -171
+                -178 -167 -182 4 -4 90 75 190 175 l182 182 -180 180 c-167 167 -195 192 -195 173z" />
+              </g>
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="icon-arrow-left"></i>
+            <svg class="keyboard-arrow-left" xmlns="http://www.w3.org/2000/svg" width="47" height="74" viewBox="0 0 37.000000 72.000000">
+              <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#787878" stroke="none">
+                <path d="M175 540 l-180 -180 182 -182 c100 -100 186 -179 190 -175 4 4 -71
+                 86 -167 182 l-175 175 173 173 c94 95 172 176 172 180 0 19 -28 -6 -195 -173z" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="full-img">
+    </div>
+    <section class="management">
+      <div class="container">
+        <h1 class="h1">Management</h1>
+        <div class="flex-wrap">
+          <div class="col">
+            <picture>
+              <img src="assets/images/marano.png" srcset="assets/images/marano.png 1x,
+                      assets/images/marano@2x.png 2x"
+                alt="Marco Marano">
+            </picture>
+            <h2 class="h2">Marco Marano</h2>
+            <p>Managing director</p>
+            <div class="contact-links">
+              <a href="#"><i class="icon-linkedin"></i></a>
+              <a href="#"><i class="icon-envelop"></i>vCard</a>
+            </div>
+          </div>
+          <div class="col">
+            <picture>
+              <img src="assets/images/borea.png" srcset="assets/images/borea.png 1x,
+                          assets/images/borea@2x.png 2x"
+                alt="Carlo Borea">
+            </picture>
+            <h2 class="h2">Carlo Borea</h2>
+            <p>Director</p>
+            <div class="contact-links">
+              <a href="#"><i class="icon-linkedin"></i></a>
+              <a href="#"><i class="icon-envelop"></i>vCard</a>
+            </div>
+          </div>
+          <div class="col">
+            <picture>
+              <img src="assets/images/vacri.png" srcset="assets/images/vacri.png 1x,
+                          assets/images/vacri@2x.png 2x"
+                alt="Roberta Vacri">
+            </picture>
+            <h2 class="h2">Roberta Vacri</h2>
+            <p>Director</p>
+            <div class="contact-links">
+              <a href="#"><i class="icon-linkedin"></i></a>
+              <a href="#"><i class="icon-envelop"></i>vCard</a>
+            </div>
+          </div>
+          <div class="col">
+            <picture>
+              <img src="assets/images/marano.png" srcset="assets/images/marano.png 1x,
+                          assets/images/marano@2x.png 2x"
+                alt="Terence Pay">
+            </picture>
+            <h2 class="h2">Terence Pay</h2>
+            <p>International Tax Advisory</p>
+            <div class="contact-links">
+              <a href="#"><i class="icon-linkedin"></i></a>
+              <a href="#"><i class="icon-envelop"></i>vCard</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="see-button">See All<i class="icon-arrow-right"></i></button>
+      </div>
+    </section>
+    <section class="tax">
+      <div class="container">
+        <h1 class="h1">Tax at a Glance</h1>
+        <p>View international tax rates with our built-in feature.</p>
+        <button type="button" class="view-button">View Intl Tax rates<i class="icon-arrow-right"></i></button>
+      </div>
+    </section>
+    <section class="resources">
+      <div class="container">
+        <div class="text-wrap">
+          <h1 class="h1">Resources</h1>
+          <p>We regularly publish technical articles and guides on our website and in professional publications on
+            various tax and structuring matters, including updates on developments in UK and international tax. Click
+            “See All” below to view our full library.</p>
+        </div>
+        <div class="flex-wrap articles">
+          <div class="col">
+            <h2 class="h2">Spain: ECJ Rules Inheritance Tax Discriminatory</h2>
+            <p>The European Court of Justice (ECJ) has ruled that Spain is in breach of European Union treaties by
+              imposing a higher rate of gift and inheritance taxes on non-residents.</p>
+            <a href="#" class="read-more">Read More</a><i class="icon-arrow-right"></i>
+          </div>
+          <div class="col">
+            <h2 class="h2">UK: Remittance Basis Restricted For Loan Collateral</h2>
+            <p>HMRC has announced the sudden withdrawal of a concession whereby foreign income and gains used as loan
+              collateral were not considered to have been remitted to the UK.</p>
+            <a href="#" class="read-more">Read More</a><i class="icon-arrow-right"></i>
+          </div>
+        </div>
+        <button type="button" class="see-button">See All<i class="icon-arrow-right"></i></button>
+        <div class="downloads">
+          <h2 class="h2">Brochures Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+          <div class="flex-wrap">
+            <div class="col">
+              <a href="#">
+                <picture>
+                  <img src="assets/images/brochure-2015.jpg" srcset="assets/images/brochure-2015.jpg 1x,
+                                  assets/images/brochure-2015@2x.jpg 2x"
+                    alt="brochure-2015">
+                </picture>
+              </a>
+              <h2 class="h2">verFides Service Brochure 2015</h2>
+              <a href="#" class="download">Download PDF</a><i class="icon-arrow-thin-down"></i>
+            </div>
+            <div class="col">
+              <a href="#">
+                <picture>
+                  <img src="assets/images/report-2015.jpg" srcset="assets/images/report-2015.jpg 1x,
+                                      assets/images/report-2015@2x.jpg 2x"
+                    alt="report-2015">
+                </picture>
+              </a>
+              <h2 class="h2">verFides Financial Report 2014/15</h2>
+              <a href="#" class="download">Download PDF</a><i class="icon-arrow-thin-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registration">
+      <div class="container">
+        <h2 class="h2">Register here for our mailing list and we will keep you up to date with news from Verfides.</h2>
+        <form class="form-registration">
+          <div class="registration-form-group">
+            <div class="col">
+              <input type="text" id="registration-name" placeholder="Name">
+            </div>
+            <div class="col">
+              <input type="email" id="registration-email" placeholder="Email Address">
+            </div>
+          </div>
+          <button type="submit" class="registration-button">Submit<i class="icon-arrow-right"></i></button>
+        </form>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="title-wrap">
+          <h1 class="h1">Contact Us</h1>
+          <p>We’re based in London and have offices in key international financial centres. We also partner
+            with outstanding professionals worldwide – so wherever you or your clients are, we can deliver
+            the very best knowledge, resources and service. </p>
+        </div>
+        <div class="maps">
+          <div class="flex-wrap">
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/map-1.png" alt="map-1"></a>
+              <h2 class="h2">London - UK</h2>
+              <address>5th Floor
+                <br>86 Jermyn Street
+                <br>St James, London
+                <br>SW1Y 6AW
+              </address>
+              <p>Telephone:<a href="tel:+44(0)2079307111"> + 44 (0)20 7930 7111</a></p>
+              <p>Facsimile:<a href="tel:+44(0)2079307444"> + 44 (0)20 7930 7444</a></p>
+              <p>Email:<a href="mailto:london@verfides.net"> london@verfides.net</a></p>
+            </div>
+            <div class="col">
+              <a href="#"><img src="assets/images/map-2.png" alt="map-2"></a>
+              <h2 class="h2">Dublin - Ireland</h2>
+              <address>68 Fitzwilliam Square
+                <br>Dublin 2
+                <br>Ireland
+              </address>
+              <p>Telephone:<a href="tel:+35316629310"> + 353 1 662 9310</a></p>
+              <p>Facsimile:<a href="tel:+35316629311 "> + 353 1 662 9311</a></p>
+              <p>Email:<a href="mailto:dublin@verfides.net"> dublin@verfides.net</a></p>
+            </div>
+            <div class="col">
+              <a href="#"><img src="assets/images/map-3.png" alt="map-3"></a>
+              <h2 class="h2">Nicosia - Cyprus</h2>
+              <address>30 Costa Anaxagora
+                <br>Storikon Building
+                <br>1st Floor, Office 102
+                <br>CY - 2014 Nicosia
+              </address>
+              <p>Telephone:<a href="tel:+35722007885"> + 357 22 007885</a></p>
+              <p>Facsimile:<a href="tel:+35722007886"> + 357 22 007886</a></p>
+              <p>Email:<a href="mailto:cyprus@verfides.net"> cyprus@verfides.net</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h1 class="h1">Questions?</h1>
+        <p>Feel free to send us an enquiry for an initial consultation.</p>
+        <form class="form-question">
+          <div class="question-form-group">
+            <div class="col">
+              <p>Mandatory fields&ast;</p>
+              <input type="text" id="question-name" placeholder="Name&ast;">
+              <input type="email" id="question-email" placeholder="Email Adress&ast;">
+              <input type="tel" id="question-phone" placeholder="Telephone&ast;">
+            </div>
+            <div class="col">
+              <textarea name="enquiry" id="question-text" placeholder="Enquiry&ast;" maxlength="290"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="question-button">Submit<i class="icon-arrow-right"></i></button>
+        </form>
+      </div>
+    </section>
+    <section class="supervisory">
+      <div class="container">
+        <h1 class="h1">Supervisory &amp; Regulatory Bodies</h1>
+        <div class="text-content">
+          <div class="col">
+            <p>Verfides is registered with and supervised by HM Revenue and Customs as a Trust and
+              Company Service Provider ("TCSP") under The Money Laundering Regulations 2007.</p>
+          </div>
+          <div class="col">
+            <p>Verfides (Ireland) Limited and Verfides Trustees Limited are authorised by the
+              Department of Justice and Equality of the Ministry of Justice to carry on Trust
+              and Company Service Provider business in the Republic of Ireland under The Criminal
+              Justice (Money Laundering and Terrorist Financing) Act 2010.</p>
+          </div>
+          <div class="col">
+            <p>Verfides Group companies are registered with the IRS of the USA as Foreign Financial
+              Institutions (FFI) and are fully compliant with legislation relating to US FATCA in
+              all the jurisdictions where there is a local regulatory requirement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="currency-feed">
+      <div class="currency-top"><span>Currency:</span><button type="button" class="currency-btn current-currency">GBP&#163;</button><button
+          type="button" class="currency-btn">EUR&#8364;</button><button type="button" class="currency-btn">USD&#36;</button>
+      </div>
+      <div class="currency-main">
+        <ul class="currencies">
+          <li><span>United States Dollar</span>1.64880</li>
+          <li><span>Euro</span>1.11379</li>
+          <li><span>Mexican Peso</span>0.80077</li>
+          <li><span>British Pound Sterling</span>0.62572</li>
+          <li><span>Hong Kong Dollar</span>7.75000</li>
+          <li><span>Japanese Yen</span>7.75000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-links">
+      <ul class="footer-navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Management</a></li>
+        <li><a href="">Resources</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Client Area</a></li>
+        <li><a href="">Careers</a></li>
+        <li><i class="icon-linkedin"></i><a href="">LinkedIn</a></li>
+        <li><a href="">T&amp;Cs</a></li>
+      </ul>
+      <ul class="footer-services">
+        <li><a href="">Trust &amp; Estate Planning</a></li>
+        <li><a href="">Tax Advisory Services</a></li>
+        <li><a href="">Employment Solutions: UK Businesses</a></li>
+        <li><a href="">UK Real Estate Structurings</a></li>
+        <li><a href="">Coming to the UK: Businesses &amp; Individuals</a></li>
+        <li><a href="">Wealth Structure &amp; Family Office</a></li>
+        <li><a href="">Corporate &amp; Fiduciary Services</a></li>
+        <li><a href="">Accountancy &amp; Tax Compliance</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <a href="#" class="footer-logo"><img src="assets/images/footer-logo.png" alt="verFides"></a>
+      <p>&copy; Copyright 2015</p>
+    </div>
+    <div class="footer-info">
+      <p>Regulated by: MoJ (Ireland) Number: 761 5235 | FATCA</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor.min.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+
+</body>
+
+</html>
