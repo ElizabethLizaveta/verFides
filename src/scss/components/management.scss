@@ -12,14 +12,17 @@
     .h1 {
         margin-bottom: 91px;
 
-        @include media('<desktop') {
-            margin-bottom: 70px;
+        @include media('<tablet') {
+            margin-bottom: 42px;
         }
 
         &:after {
             border-bottom: 1px solid #769eca;
-            width: 250px;
             bottom: -30px;
+
+            @include media('<tablet') {
+                bottom: -20px;
+            }
         }
     }
 
@@ -57,13 +60,17 @@
     .h2 {
         margin-top: 18px;
         font-size: 18px;
+
+        @include media('<tablet') {
+            font-size: 16px;
+        }
     }
 
     p {
         line-height: 22px;
 
         @include media('<phone') {
-           font-size: 12px;
+            font-size: 12px;
         }
     }
 
@@ -71,28 +78,31 @@
         margin-bottom: 40px;
 
         i {
-            font-size: 15px;
+            font-size: 20px;
+
+            @include media('<tablet') {
+                font-size: 16px;
+            }
+        }
+
+        .icon-envelop {
+            font-size: 23px;
+
+            @include media('<tablet') {
+                font-size: 19px;
+            }
         }
 
         a {
+            margin-right: 5px;
             color: map-get($management, 'link-color');
             font-weight: 700;
 
             &:hover,
             &:focus {
-
-                i {
-                    box-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
-                }
-                
-                span {
-                    text-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
-                }
+                text-decoration: none;
+                opacity: 0.5;
             }
-        }
-
-        a+a {
-            margin-left: 5px;
 
             i {
                 margin-right: 5px;
@@ -104,11 +114,6 @@
         border: 1px solid map-get($management, 'button-border-color');
         padding: 15px 52px;
         font-weight: 700;
-
-        &:hover,
-        &:focus {
-            box-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
-        }
 
         i {
             font-size: 12px;

@@ -2,10 +2,10 @@
 const VideoSwitch = {
 
   switch() {
-    const playBtn = $('.play-button');
-    const stopBtn = $('.stop-button');
     const heroSection = $('.hero');
-    const video = $('.video-hero').get(0);
+    const playBtn = heroSection.find('.play-button');
+    const stopBtn = heroSection.find('.stop-button');
+    const video = heroSection.find('.video-hero').get(0);
 
     function playVideo() {
       video.play();

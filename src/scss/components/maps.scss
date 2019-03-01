@@ -1,0 +1,82 @@
+.maps {
+
+    .flex-wrap {
+
+        @include media('<tablet') {
+            flex-direction: column;
+        }
+    }
+
+    .col {
+
+        width: 33%;
+
+        @include media('<tablet') {
+            width: 100%;
+        }
+
+        .h2 {
+            position: relative;
+            margin: 25px 0 35px 0;
+            font-size: 18px;
+
+            @include media('<tablet') {
+                font-size: 16px;
+                margin: 25px 0 25px 0;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                border-bottom: 2px solid #1a3255;
+                width: 13px;
+                position: absolute;
+                bottom: -13px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        address {
+            min-height: 78px;
+            line-height: 20px;
+            margin-bottom: 20px;
+
+            @include media('<tablet') {
+                min-height: inherit;
+            }
+        }
+
+        p {
+            line-height: 20px;
+        }
+
+        a {
+            color: map-get($contact, 'link-color');
+
+            &:hover,
+            &:focus {
+
+                img {
+                    -webkit-filter: none;
+                }
+            }
+        }
+
+        img {
+            -webkit-filter: grayscale(90%) brightness(30%) sepia(90%) hue-rotate(-180deg) saturate(400%) contrast(0.7);
+            filter: grayscale(90%) brightness(30%) sepia(90%) hue-rotate(-180deg) saturate(400%) contrast(0.7);
+        
+            @include media('<desktop') {
+                width: 180px;
+            }
+        }
+    }
+
+    .col+.col {
+
+        @include media('<tablet') {
+            margin-top: 20px;
+        }
+    }
+}

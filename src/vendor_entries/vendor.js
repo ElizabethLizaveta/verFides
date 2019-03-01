@@ -6,4 +6,5 @@ module.exports = [
   './node_modules/jquery/dist/jquery.js',
   './node_modules/picturefill/dist/picturefill.js',
   './node_modules/swiper/dist/js/swiper.js',
+  './node_modules/enquire.js/dist/enquire.js',
 ];

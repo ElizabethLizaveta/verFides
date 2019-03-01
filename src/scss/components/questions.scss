@@ -9,13 +9,24 @@
         padding: 40px 0;
     }
 
+    @include media('<tablet') {
+        font-size: 16px;
+    }
+
     .h1 {
         margin-bottom: 72px;
 
+        @include media('<tablet') {
+            margin-bottom: 42px;
+        }
+
         &:after {
             border-bottom: 1px solid #769eca;
-            width: 250px;
-            bottom: -33px;
+            bottom: -32px;
+
+            @include media('<tablet') {
+                bottom: -20px;
+            }
         }
     }
 
@@ -49,18 +60,28 @@
             color:  map-get($forms, 'placeholder-font-color');
         }
 
-        input {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
             height: 51px;
-            width: 354px;
+            width: 100%;
             padding: 20px;
 
             @include media('<desktop') {
                 width: 100%;
             }
+
+            @include media('<tablet') {
+                height: 40px;
+            }
         }
 
         input + input {
             margin-top: 18px;
+
+            @include media('<tablet') {
+                margin-top: 15px;
+            }
         }
 
         textarea {
@@ -73,6 +94,10 @@
             @include media('<desktop') {
                 width: 100%;
             }
+
+            @include media('<tablet') {
+                height: 150px;
+            }
         }
     }
 
@@ -82,14 +107,6 @@
         font-size: 14px;
         font-weight: 700;
         color: #fff;
-
-        &:not([disabled]) {
-
-            &:hover,
-            &:focus {
-              box-shadow: 1px 1px 5px rgba(#fff, 0.5);
-            }
-          }
 
         i {
             font-size: 12px;
@@ -102,14 +119,5 @@
         animation-name: border-blink;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
-    }
-
-    @keyframes border-blink {
-        from {
-            border: 1px solid red;
-        }
-        to {
-          border: 1px solid transparent; 
-        }
     }
 }

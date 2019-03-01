@@ -1,7 +1,6 @@
 .welcome {
     padding: 75px 0px 100px 0px;
     border-bottom: 1px solid #a5a5a5;
-    font-size: 14px;
     color: map-get($welcome, 'section-font-color');
 
     @include media('<desktop') {
@@ -13,46 +12,46 @@
         margin: 0 auto;
         margin-bottom: 33px;
         text-align: center;
+        font-size: 18px;
+        line-height: 23px;
+
+        @include media('<tablet') {
+            font-size: 16px;
+        }
 
         .h1 {
-            margin-bottom: 68px;
+            margin-bottom: 80px;
+
+            @include media('<tablet') {
+                margin-bottom: 42px;
+            }
 
             &:after {
                 border-bottom: 1px solid #769eca;
-                width: 250px;
-                bottom: -30px;
-            }
-        }
+                bottom: -40px;
 
-        p {
-            font-size: 18px;
+                @include media('<tablet') {
+                    bottom: -20px;
+                }
+            }
         }
     }
 
-    .flex-wrap {
-        align-items: flex-start;
-    
-        .col {
-            width: 49%;
+    .text-content {
+        column-count: 2;
+        column-gap: 27px;
+        font-size: 14px;
 
-            @include media('<desktop') {
-                display: none;
-            }
+        @include media('<desktop') {
+            column-count: 1;
         }
 
-        .col-mob {
-            display: none;
-
-            @include media('<desktop') {
-                display: block;
-            }
-        }
 
         p {
             line-height: 20px;
         }
 
-        p + p {
+        p+p {
             margin-top: 20px;
         }
     }

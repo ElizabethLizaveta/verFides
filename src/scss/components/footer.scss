@@ -26,11 +26,6 @@
                 color: map-get($currency-feed, 'currency-top-font-color');
                 margin: 0 10px;
                 padding: 0;
-
-                &:hover,
-                &:focus {
-                    text-shadow: 1px 1px 5px rgba(#787878, 0.5);
-                }
             }
 
             .current-currency {
@@ -52,13 +47,11 @@
                 margin: 0 auto;
                 padding: 0 15px;
                 display: flex;
-                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
 
                 li {
                     display: flex;
-                    flex-direction: row;
                     font-size: 16px;
                     color: map-get($currency-feed, 'currency-color');
 
@@ -90,13 +83,15 @@
             border-bottom: none;
         }
 
+        @include media('<tablet') {
+            padding: 20px 25px;
+        }
+
         .footer-navigation {
             position: relative;
             display: flex;
-            flex-direction: row;
             max-width: 600px;
-            margin: 0 auto;
-            margin-bottom: 25px;
+            margin: 0 auto 25px auto;
             flex-wrap: wrap;
             justify-content: center;
             font-size: 16px;
@@ -104,7 +99,7 @@
             @include media('<tablet') {
                 flex-direction: column;
                 justify-content: flex-start;
-                height: 180px;
+                height: 150px;
                 margin-bottom: 0;
             }
 
@@ -120,27 +115,29 @@
 
                 @include media('<tablet') {
                     width: 100%;
-                    bottom: -35px;
+                    bottom: -20px;
                     border-bottom: 1px solid #dddddd;
                 }
             }
 
             li {
-                margin-right: 24px;
                 line-height: 30px;
 
                 a {
                     color: map-get($footer-links, 'navigation-font-color');
+                }
 
-                    &:hover,
-                    &:focus {
-                        text-shadow: 1px 1px 5px rgba(#787878, 0.5);
-                    }
+                i {
+                    font-size: 12px;
+                    margin-right: 5px;
+                }
+            }
 
-                    i {
-                        font-size: 12px;
-                        margin-right: 5px;
-                    }
+            li+li {
+                margin-left: 24px;
+
+                @include media('<tablet') {
+                    margin-left: 0;
                 }
             }
         }
@@ -149,7 +146,6 @@
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             font-size: 14px;
@@ -164,17 +160,12 @@
 
                 a {
                     color: map-get($footer-links, 'services-font-color');
-
-                    &:hover,
-                    &:focus {
-                        text-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
-                    }
                 }
             }
         }
     }
 
-    .footer-logo {
+    .footer-bottom {
         padding: 18px 0;
         display: flex;
         flex-direction: column;
@@ -190,7 +181,7 @@
 
     .footer-info {
         display: none;
-        padding: 15px 30px;
+        padding: 0px 30px 15px 30px;
         font-size: 14px;
         color: map-get($footer-logo, 'section-font-color');
 

@@ -11,18 +11,33 @@ const SwiperSlide = {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      obserer: true,
       breakpoints: {
+        1299: {
+          slidesPerView: 3,
+        },
         979: {
           direction: 'vertical',
           slidesPerView: 'all',
           spaceBetween: 0,
           navigation: false,
         },
-        1299: {
-          slidesPerView: 3,
-        },
       },
     });
+
+    $(window).on('resize', () => {
+      const ww = $(window).width();
+      if (ww >= 980) {
+        swiper.params.slidesPerView = 3;
+        swiper.params.direction = 'horizontal';
+      }
+      if (ww >= 1300) {
+        swiper.params.slidesPerView = 4;
+        swiper.params.direction = 'horizontal';
+      }
+      swiper.update();
+    });
+    $(window).trigger('resize');
   },
 };
 

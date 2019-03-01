@@ -14,19 +14,27 @@
         text-align: center;
         margin-bottom: 50px;
         font-size: 18px;
+        line-height: 23px;
+
+        @include media('<tablet') {
+            font-size: 16px;
+        }
 
         .h1 {
             margin-bottom: 70px;
 
+            @include media('<tablet') {
+                margin-bottom: 42px;
+            }
+
             &:after {
                 border-bottom: 1px solid #769eca;
-                width: 250px;
-                bottom: -30px;
-            }
-        }
+                bottom: -40px;
 
-        p {
-            line-height: 23px;
+                @include media('<tablet') {
+                    bottom: -20px;
+                }
+            }
         }
     }
 
@@ -37,6 +45,10 @@
             font-size: 18px;
             color: #1a3255;
             margin-bottom: 5px;
+
+            @include media('<tablet') {
+                font-size: 16px;
+            }
         }
 
         .col {
@@ -67,16 +79,12 @@
     .download {
         font-weight: 700;
         color: map-get($resources, 'link-color');
+    }
 
-        &:hover,
-        &:focus {
-            text-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
-        }
-
-        i {
-            font-size: 12px;
-            margin-left: 8px;
-        }
+    i {
+        font-size: 12px;
+        margin-left: 8px;
+        color: map-get($resources, 'link-color');
     }
 
     .see-button {
@@ -90,11 +98,6 @@
             margin: 16px 0 40px 0;
         }
 
-        &:hover,
-        &:focus {
-            box-shadow: 1px 1px 5px rgba(#1a3255, 0.5);
-        }
-
         i {
             font-size: 12px;
             margin-left: 8px;
@@ -106,6 +109,10 @@
         .h2 {
             font-size: 18px;
             margin-bottom: 36px;
+
+            @include media('<tablet') {
+                font-size: 16px;
+            }
         }
 
         .flex-wrap {
@@ -130,10 +137,6 @@
 
                     @include media('<widescreen') {
                         font-size: 14px;
-                    }
-
-                    @include media('<tablet') {
-                        font-size: 18px;
                     }
                 }
             }

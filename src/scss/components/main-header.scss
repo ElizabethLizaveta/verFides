@@ -49,13 +49,12 @@
 
         .main-nav {
             display: flex;
-            flex-direction: row;
             justify-content: center;
             margin-right: 53px;
 
             @include media('<desktop') {
                 flex-direction: column;
-                height: 550px;
+                height: calc(100vh - 80px);
                 width: 100vw;
                 position: absolute;
                 top: -100vh;
@@ -65,8 +64,8 @@
                 z-index: 1;
             }
 
-            @include media('<phone') {
-                height: 550px;
+            @include media('<tablet') {
+                height: calc(100vh - 60px);
             }
 
             &.active-menu {
@@ -87,7 +86,7 @@
                 }
 
                 @include media('<desktop') {
-                    font-size: 25px;
+                    font-size: 18px;
                     text-transform: uppercase;
                     padding: 20px 0;
                     text-align: center;
@@ -140,7 +139,8 @@
 
                 &:hover,
                 &:focus {
-                    text-shadow: 1px 1px 3px #fff;
+                    opacity: 0.5;
+                    text-decoration: none;
                 }
             }
         }

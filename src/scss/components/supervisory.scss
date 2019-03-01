@@ -11,10 +11,17 @@
     .h1 {
         margin-bottom: 68px;
 
+        @include media('<tablet') {
+            margin-bottom: 42px;
+        }
+
         &:after {
             border-bottom: 1px solid #769eca;
-            width: 250px;
             bottom: -30px;
+
+            @include media('<tablet') {
+                bottom: -20px;
+            }
         }
     }
 
@@ -22,29 +29,30 @@
         line-height: 20px;
     }
 
-    .flex-wrap {
-        align-items: flex-start;
+     .text-content {
+        column-count: 3;
+        column-gap: 35px;
 
-        @include media('<tablet') {
-            flex-direction: column;
+        @include media('<desktop') {
+            column-count: 1;
         }
-    
 
-        .col {
-            width: 31%;
-            text-align: left;
+         .col {
 
-            @include media('<tablet') {
-                width: 100%;
+            @include media('>=desktop') {
+                height: 161px;
             }
-        }
+
+             text-align: left;
+         }
+     }
 
         .col + .col {
 
-            @include media('<tablet') {
+            @include media('<desktop') {
                 margin-top: 20px;
             }
         }
-    }
+    
 
 }

@@ -1,0 +1,8 @@
+@keyframes border-blink {
+    from {
+        border: 1px solid red;
+    }
+    to {
+      border: 1px solid transparent; 
+    }
+}
